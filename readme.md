@@ -1,4 +1,4 @@
-#¡Bienvenido a Mercado Liebre! #
+# ¡Bienvenido a Mercado Liebre!
 
 Mercado Liebre es una **aplicación web de comercio electrónico** que te permite comprar y vender productos utilizando tecnologías como HTML, CSS5, JS, Node; Nodemon y Express. Puedes buscar productos, filtrar por categorías, ver los detalles del producto y agregarlos al carrito de compras.
 
