@@ -1,5 +1,6 @@
 body {
     font-family:'Roboto';
+    background-color: #ebebeb;
 }
 
 header {
@@ -26,7 +27,7 @@ header nav ul li a{
     font-size: 12px;
     text-decoration: none;
     color: #000;
-    list-style-type: none;
+    list-style-type:none;
 }
 
 header nav ul li{
@@ -44,4 +45,64 @@ header div.burger-menu i {
 
 header div.burger-menu {
     text-align: center;
+}
+
+main section h3 {
+    font-size: 24px;
+}
+
+main section article p.precio {
+    font-size: 18px;
+}
+
+main section article p.descuento {
+    font-size: 16px;
+}
+
+main section article h4 {
+    font-size: 16px;
+}
+
+footer ul li h3 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 3px;
+}
+
+footer ul li p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 23px;
+    margin-bottom: 100px;
+}
+
+footer ul li div {
+    text-align: center;
+    color: #1259c3;
+    margin-top: 150px;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer ul li div i {
+    font-size: 50px;
+    
+}
+
+footer ul li p.copyright {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+footer ul {
+    background-color:white;
+    padding-top: 1px;
+}
+
+main section article {
+    background-color: white;
+    text-align: center;
+    
 }
