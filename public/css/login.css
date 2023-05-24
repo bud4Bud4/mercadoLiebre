@@ -16,7 +16,8 @@ body.delLogin {
 
 .formul label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 20px;
 }
 
 .formul input[type="text"],
@@ -67,11 +68,7 @@ body.delLogin {
     clear: both;
 }
 
-.clave label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+
 
 .clave input[type="password"] {
     margin-bottom: 40px;
