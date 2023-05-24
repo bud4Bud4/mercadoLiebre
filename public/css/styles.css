@@ -14,37 +14,62 @@ header {
     background-color: #EAC926;
     width: 100%;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 header img.logo{
-    width: 30vw;
+    width: 50%;
+}
+header .buscador{
+    padding: 2vw 2vw 0 2vw;
+    width: 50%; 
+    display: flex;
+}
+header .buscador input {
+    width: 90%;
+    background-color:white;
+    color: #666;
+    border: none;
+    padding: 1vw;
+    border-radius: 10px 0 0 10px;
+    height: 40%;
 }
 
-header .buscador div.input {
+header .buscador button {
+    width: 10%;
     background-color:white;
-    border: 1px solid black;
+    padding-right: 30px;
+    border: none;
     color: #666;
-}
-
-header .buscador div.lupa i {
-    background-color:white;
-    border: 1px solid black;
-    color: #666;
+    border-radius: 0 10px 10px 0;
 }
 
 header p {
+    display: block;
+    width: 100%;
     text-align: center;
 }
 
+header nav{
+    display: none;
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+
 header nav ul li a{
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     color: #000;
     list-style-type:none;
 }
 
-header nav ul li{
-    list-style-type: none;
+header div.burger-menu {
+    text-align: center;
 }
 
 header div.burger-menu i {
@@ -54,10 +79,6 @@ header div.burger-menu i {
     padding: 8px;
     margin: 10px 0 20px 0;
     border-radius: 5px;
-}
-
-header div.burger-menu {
-    text-align: center;
 }
 
 .banner img{
@@ -92,16 +113,26 @@ main section h3 {
 
 main section article{
 
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: white;
     justify-self: center;
+    transition: all 300ms;
 }
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transform: scale(110%);
+}
+main section article:hover i{
+    transform: rotate3d(0, 1, 0, 180deg) rotate(-90deg);
+}
+
 main section article img{
     width: 100%;
     border-bottom: solid 1px #ebebeb ;
+    transition: all 450ms;
 }
 
 main section article div{
@@ -140,8 +171,9 @@ main section article div i{
     position: absolute;
     right: 20px;
     top: -20px;
-    
+    transition: all 450ms;
     }
+
 
     /* FOOTER */
 
@@ -167,6 +199,12 @@ footer ul li{
 footer ul li div i {
     font-size: 50px;
     margin-top: 10px;
+    color: #1259c3;
+    transition: all 300ms;
+}
+
+footer ul li div i:hover{
+    color: #EAC926;
 }
 
 footer ul li h3 {
@@ -180,11 +218,9 @@ footer ul li p {
     margin-bottom: 38px;
 }
 
-footer ul li div {
-    color: #1259c3;
-}
-
 footer ul li p.copyright {
+    position: relative;
+    left: 10px;
     text-align: left;
     margin-top: 20px;
     color: #666;
@@ -192,16 +228,101 @@ footer ul li p.copyright {
 }
 
 
-@media (min-width: 361px){
-    main section article{
-        width: 43.8%;
-        display: block;
+@media (min-width: 361px) {
+    header{
+        padding: 15px 10px 0 10px;
+        justify-content: space-around;
     }
+    header img.logo {
+        width: 25%;
+    }
+
+    header .buscador {
+        
+        width: 37%;
+        display: flex;
+    }
+
+    header p {
+        display: block;
+        width: 33%;
+        text-align: center;
+    }
+
+    main section article {
+        width: 43.8%;
+    }
+
+    main section article div h4 {
+        display: inline;
+    }
+
+    header div.burger-menu {
+        text-align: center;
+        display: none;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul.izq {
+        width: 40%;
+        margin-left: 20px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    header nav ul.izq li{
+        white-space: nowrap;
+        margin: 10px 5px 0 5px;
+    }
+    header nav ul.der{
+        width: 40%;
+        margin-right: 20px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    header nav ul.der li{
+        white-space: nowrap;
+        margin: 10px 5px 0 5px;
+    }
+
 }
 
 @media (min-width: 769px) {
+    header{
+        padding: 10px 30px 0 30px;
+    }
+    header img.logo {
+        max-width: 200px;
+    }
+    header .buscador{
+        padding: 0 0 0 0;
+        width: 40%; 
+        display: flex;
+        justify-content: space-between;
+    }
     main section article{
         width: 22.1%;
-        display: block;
+    }
+    main section article div h4{
+        display: inline;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    footer ul li{
+        width: 28%;
     }
 }
