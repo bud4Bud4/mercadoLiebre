@@ -1,0 +1,83 @@
+body.delLogin {
+    font-family:'Roboto';
+    background-color: #ebebeb;
+    margin: 0;
+    padding: 0;
+}
+
+.formul {
+    max-width: 450px;
+    margin: 50px auto;
+    background-color: #EAC926;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.formul label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formul input[type="text"],
+.formul input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1259c3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.formul select {
+    height: 34px;
+}
+
+.formul input[type="submit"] {
+    background-color: #39b54a;
+    color: #ebebeb;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.formul input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.formul input[type="reset"] {
+    background-color: #666;
+    color: #ebebeb;
+    padding: 10px 18px;
+    border: solid #666 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+.formul input[type="reset"]:hover {
+    background-color: #ebebeb;
+    color:#666 ;
+}
+
+.formul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clave label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.clave input[type="password"] {
+    margin-bottom: 40px;
+}
+
+
+
+
+

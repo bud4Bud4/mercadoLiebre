@@ -19,9 +19,9 @@ header {
     align-items: center;
     justify-content: center;
 }
-
-header img.logo{
-    width: 50%;
+header a{width: 50%;}
+header a img.logo{
+    width: 100%;
 }
 header .buscador{
     padding: 2vw 2vw 0 2vw;
@@ -233,8 +233,9 @@ footer ul li p.copyright {
         padding: 15px 10px 0 10px;
         justify-content: space-around;
     }
-    header img.logo {
-        width: 25%;
+    header a{width: 25%;}
+    header a img.logo {
+        width: 100%;
     }
 
     header .buscador {
@@ -301,8 +302,9 @@ footer ul li p.copyright {
     header{
         padding: 10px 30px 0 30px;
     }
-    header img.logo {
-        max-width: 200px;
+    header a{max-width: 200px;}
+    header a img.logo {
+        width: 100%;
     }
     header .buscador{
         padding: 0 0 0 0;

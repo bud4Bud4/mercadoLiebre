@@ -1,9 +1,16 @@
-● Debemos centrar la sección main y que ocupe un 90% del ancho de la pantalla.
-● Entre cada artículo hay una separación de 10 píxeles.
-● Nos piden que manejemos el logo del envío, el precio, el porcentaje de descuento
-y la descripción del artículo como elementos de una caja dentro de la caja general
-del artículo.
-● Nos piden que la misma tenga un borde superior de 1 píxel, línea sólida y color
-#ebebeb.
-● Debe tener separado el contenido de sus bordes en 15 píxeles en cada uno de sus
-lados.
+■ Nombre y apellido
+■ Nombre de usuari@
+■ Fecha de nacimiento
+■ Domicilio
+■ Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender)
+■ Categorías de interés (puede elegir más de una)
+    ● Electro
+    ● Moda
+    ● Hogar
+    ● Juguetería
+    ● Vida sana
+■ Foto de usuario
+■ Contraseña
+■ Confirmar contraseña
+■ Botón de enviar que nos lleve a la página principal
+■ Botón de borrar todos los datos del formulario
