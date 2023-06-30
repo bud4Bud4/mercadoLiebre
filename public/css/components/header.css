@@ -1,0 +1,165 @@
+/* HEADER */
+
+header {
+    background-color: #EAC926;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+header a{width: 50%;}
+header a img.logo{
+    width: 100%;
+}
+header .buscador{
+    padding: 2vw 2vw 0 2vw;
+    width: 50%; 
+    display: flex;
+}
+header .buscador input {
+    width: 90%;
+    background-color:white;
+    color: #666;
+    border: none;
+    padding: 1vw;
+    border-radius: 10px 0 0 10px;
+    height: 40%;
+}
+
+header .buscador button {
+    width: 10%;
+    background-color:white;
+    padding-right: 30px;
+    border: none;
+    color: #666;
+    border-radius: 0 10px 10px 0;
+}
+
+header p {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+header nav{
+    display: none;
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    list-style-type:none;
+}
+
+header div.burger-menu {
+    text-align: center;
+}
+
+header div.burger-menu i {
+    background-color: #1259c3;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px;
+    margin: 10px 0 20px 0;
+    border-radius: 5px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+ /* MAIN*/
+ main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+ }
+
+main section{
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+
+main section h3 {
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    text-align: left;
+}
+
+main section article{
+
+    
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    justify-self: center;
+    transition: all 300ms;
+}
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transform: scale(107%);
+}
+main section article:hover i{
+    transform: rotate3d(0, 1, 0, 180deg) rotate(-90deg);
+}
+
+main section article img{
+    width: 100%;
+    border-bottom: solid 1px #ebebeb ;
+    transition: all 450ms;
+}
+
+main section article div{
+    position: relative;
+    text-align: left;
+    padding: 15px ;
+}
+
+main section article div p.precio {
+    font-size: 18px;
+    margin-bottom: -15px;
+}
+
+main section article div p.descuento {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+main section article div h4 {
+    display: none;
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+main section article div i{
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    padding: 6px 5px 0px 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    transition: all 450ms;
+    }
