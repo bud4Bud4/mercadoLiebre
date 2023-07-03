@@ -7,6 +7,9 @@ module.exports = {
     userLogin: (req, res) => {
         res.render("users/login")
     },
+    userLoginProcess: (req,res) =>{
+        res.redirect("/")
+    },
 
     userRegister: (req,res) => {
         res.render("users/register")
