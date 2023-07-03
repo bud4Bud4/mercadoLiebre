@@ -8,7 +8,7 @@
     <%- include("../partials/header.ejs") %>
 
     <div class="formul">
-        <form action="/registro" method="POST">
+        <form action="/user/register" method="POST">
             <section class="personal">
                 <label for="name" aria-required="true">Nombre</label>
                 <input type="text" name="name" id="name" required>
@@ -267,25 +267,25 @@
                     <input type="text" name="street" id="street">
     
                     <label for="height">Altura</label>
-                    <input type="number" name="" id="height">
+                    <input type="number" name="height" id="height">
     
                     <label for="detail">Departamento/Detalle</label>
                     <input type="text" name="detail" id="detail">
             </section>
             <section class="motivo">
-                <label for="perfilUsuario">Quiero:</label>
-                <input type="radio" name="perfilUsuario" value="Comprar" checked>Comprar
-                <input type="radio" name="perfilUsuario" value="Vender">Vender
+                <label for="userProfile">Quiero:</label>
+                <input type="radio" name="userProfile" value="Comprar" checked>Comprar
+                <input type="radio" name="userProfile" value="Vender">Vender
             
-                <label for="interes">Categorias de Interes</label>
-                <input type="checkbox" name="interes" value="Electro">Electro
-                <input type="checkbox" name="interes" value="Moda">Moda
-                <input type="checkbox" name="interes" value="Hogar">Hogar
-                <input type="checkbox" name="interes" value="Juguetería">Juguetería
-                <input type="checkbox" name="interes" value="Vida sana">Vida sana
+                <label for="interests">Categorias de Interes</label>
+                <input type="checkbox" name="interests" value="Electro">Electro
+                <input type="checkbox" name="interests" value="Moda">Moda
+                <input type="checkbox" name="interests" value="Hogar">Hogar
+                <input type="checkbox" name="interests" value="Juguetería">Juguetería
+                <input type="checkbox" name="interests" value="Vida sana">Vida sana
             </section>
             
-            <label class="Imagen">Imagen de perfil</label>
+            <label for="avatar" class="Imagen">Imagen de perfil</label>
             <input type="file" name="avatar" accept=".jpg,.png">
             
             <section class="clave">

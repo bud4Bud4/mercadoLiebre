@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "name",
+    "lastName": "lastName",
+    "user": "user",
+    "birthday": "birthday",
+    "country": "country",
+    "city": "city",
+    "street": "street",
+    "height": "height",
+    "detail": "detail",
+    "userProfile": "userProfile",
+    "interests": "interests",
+    "avatar": "avatar",
+    "password": "password"
+  },
+  {
+    "id": 2,
+    "name": "Tomas Alejandro",
+    "lastName": "Garcia Tarantino",
+    "user": "Bud4",
+    "birthday": "2000-05-15",
+    "country": "AR",
+    "city": "Buenos Aires",
+    "street": "Av. Corrientes",
+    "detail": "13 D",
+    "userProfile": "Vender",
+    "interests": [
+      "Electro",
+      "Hogar",
+      "Juguetería"
+    ],
+    "avatar": "8b4809199343ce79.png",
+    "password": "12357"
+  },
+  {
+    "id": 3,
+    "name": "Nanci",
+    "lastName": "Tarantino",
+    "user": "Beatriz",
+    "birthday": "1962-04-19",
+    "country": "AR",
+    "city": "Buenos Aires",
+    "street": "Av. Corrientes",
+    "detail": "13 D",
+    "userProfile": "Comprar",
+    "interests": [
+      "Electro",
+      "Moda",
+      "Hogar",
+      "Juguetería",
+      "Vida sana"
+    ],
+    "avatar": "Mapa conceptual.png",
+    "password": "Nanci123"
+  },
+  {
+    "id": 4,
+    "name": "fermin",
+    "lastName": "bianco",
+    "user": "FBianco",
+    "birthday": "1963-10-10",
+    "country": "AO",
+    "city": "catamarca",
+    "street": "Av. Corrientes",
+    "detail": "7p",
+    "userProfile": "Vender",
+    "avatar": "",
+    "password": "qwerty"
+  }
+]
