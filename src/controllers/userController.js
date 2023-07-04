@@ -16,6 +16,7 @@ module.exports = {
     },
     userRegisterProcess: (req, res) => {
         console.log(req.body);
+        console.log("" +req.file.filename);
         const user ={ 
         "id" : datos.length + 1,
         "name" : req.body.name,
@@ -29,10 +30,26 @@ module.exports = {
         "detail" : req.body.detail,
         "userProfile" : req.body.userProfile,
         "interests" : req.body.interests,
-        "avatar" : req.body.avatar,
+        "avatar" : req.file.filename,
         "password" : req.body.password
         }
         fs.writeFileSync(path.resolve(__dirname, '../database/users.json'), JSON.stringify([...datos, user], null, 2), 'utf-8');
         res.redirect("/")
-        }
+    },
+
+    userProfile: (req,res) =>{
+        const userFound = datos.find((row) => row.id == req.params.id)
+        if (userFound) {
+            res.render("users/profile.ejs", {userFound: userFound})
+        }else {res.send("usuario no encontrado")}
+        
+    },
+    userEditProcess: (req,res) => {     
+        const usuario = datos.find((row) => row.id == req.params.id);
+        for (let propiedad in req.body) {
+            usuario[propiedad] = req.body[propiedad];
+        };
+        fs.writeFileSync(path.resolve(__dirname, '../database/users.json'), JSON.stringify(datos, null, 2));
+        return res.redirect('/user/profile');
+    }
     }

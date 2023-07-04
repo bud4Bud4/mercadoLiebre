@@ -8,7 +8,7 @@
     <%- include("../partials/header.ejs") %>
 
     <div class="formul">
-        <form action="/user/register" method="POST">
+        <form action="/user/register" method="POST" enctype="multipart/form-data">
             <section class="personal">
                 <label for="name" aria-required="true">Nombre</label>
                 <input type="text" name="name" id="name" required>
@@ -286,7 +286,7 @@
             </section>
             
             <label for="avatar" class="Imagen">Imagen de perfil</label>
-            <input type="file" name="avatar" accept=".jpg,.png">
+            <input type="file" name="avatar" id="avatar">
             
             <section class="clave">
                 <label for="password">Contraseña</label>

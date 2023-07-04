@@ -12,7 +12,7 @@
     "detail": "detail",
     "userProfile": "userProfile",
     "interests": "interests",
-    "avatar": "avatar",
+    "avatar": "/images/img-tv-samsung-smart.jpg",
     "password": "password"
   },
   {
@@ -68,5 +68,40 @@
     "userProfile": "Vender",
     "avatar": "",
     "password": "qwerty"
+  },
+  {
+    "id": 5,
+    "name": "jose",
+    "lastName": "Jose alberto",
+    "user": "Albarracin",
+    "birthday": "1924-02-12",
+    "country": "AR",
+    "city": "Rosario",
+    "street": "San martin",
+    "height": "245",
+    "detail": "Casa",
+    "userProfile": "Comprar",
+    "interests": [
+      "Electro",
+      "Moda"
+    ],
+    "avatar": "Crucial-Logo.jpg",
+    "password": "password123"
+  },
+  {
+    "id": 6,
+    "name": "asd",
+    "lastName": "asd",
+    "user": "sad",
+    "birthday": "2008-12-31",
+    "country": "AR",
+    "city": "asd",
+    "street": "das",
+    "height": "21321",
+    "detail": "sad",
+    "userProfile": "Comprar",
+    "interests": "Moda",
+    "avatar": "1688504690372.jpg",
+    "password": "sad"
   }
 ]
