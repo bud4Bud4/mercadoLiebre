@@ -103,5 +103,24 @@
     "interests": "Moda",
     "avatar": "1688504690372.jpg",
     "password": "sad"
+  },
+  {
+    "id": 7,
+    "name": "sad",
+    "lastName": "sad",
+    "user": "sad",
+    "birthday": "2007-12-31",
+    "country": "AR",
+    "city": "sad",
+    "street": "sad",
+    "height": "321",
+    "detail": "sad",
+    "userProfile": "Vender",
+    "interests": [
+      "Moda",
+      "Hogar"
+    ],
+    "avatar": "profilePic-1689190257465.avif",
+    "password": "sad123"
   }
 ]

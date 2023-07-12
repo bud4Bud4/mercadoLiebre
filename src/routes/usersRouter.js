@@ -11,7 +11,7 @@ let multerDiskStorage = multer.diskStorage({
         cb(null, folder);
     },
     filename: (req, file, cb) => {
-        let imageName = Date.now()+ path.extname(file.originalname);
+        let imageName ="profilePic-" + Date.now()+ path.extname(file.originalname);
         cb(null,imageName);
     }
 })

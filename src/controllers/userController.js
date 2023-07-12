@@ -1,3 +1,4 @@
+const { error } = require('console');
 const fs = require('fs');
 const path = require('path')
 const datos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/users.json')));
