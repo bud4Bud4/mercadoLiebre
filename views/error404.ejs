@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-
-    <%- include("./partials/head.ejs") %> 
-
-    <body>
-        
-        <%- include("./partials/header.ejs") %>
-
-        <h1 class="error404">ERROR 404, PAGE NOT FOUND</h1>
-        <a href="/" class="error404">RETURN HOME</a>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error 404 - Página no encontrada</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      margin: 0;
+    }
+    
+    .error404-image {
+      height: 70vh;
+      
+    }
+    
+    .error404-message {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+    
+    .error404-home-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <img class="error-image" src="./images/error404.svg" alt="Error 404">
+  <p class="error-message">Lo sentimos, la página que buscas no se encuentra.</p>
+  <a class="home-button" href="/">Volver al Inicio</a>
+</body>
+</html>
