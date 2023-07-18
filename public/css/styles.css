@@ -3,6 +3,7 @@
 
 @import url("./components/login.css");
 @import url("./components/register.css");
+@import url("./components/error404.css");
 
 
 *{
