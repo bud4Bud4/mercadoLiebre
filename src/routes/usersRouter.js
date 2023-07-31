@@ -3,6 +3,7 @@ const router = express.Router();
 const multer = require('multer');
 const path = require('path');
 const userController = require('../controllers/userController');
+const expressValidatorRegister = require('../middlewares/expressValidatorRegister');
 
 
 let multerDiskStorage = multer.diskStorage({
@@ -25,7 +26,7 @@ router.get("/login", userController.userLogin)
 
 
 router.get("/register", userController.userRegister)
-router.post("/register", fileUpload.single('avatar'), userController.userRegisterProcess)
+router.post("/register", fileUpload.single('avatar'),expressValidatorRegister, userController.userRegisterProcess)
 
 router.get("/profile/:id", userController.userProfile)
 router.put("/userEditProcess", userController.userEditProcess)

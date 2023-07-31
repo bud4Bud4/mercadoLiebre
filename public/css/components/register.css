@@ -5,6 +5,10 @@ body.delRegister {
     padding: 0;
 }
 
+p .text-danger{
+    color: red;
+}
+
 .formul {
     max-width: 450px;
     margin: 50px auto;

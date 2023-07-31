@@ -1,6 +1,7 @@
 const { error } = require('console');
 const fs = require('fs');
 const path = require('path')
+const {validationResult} = require('express-validator')
 const datos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/users.json')));
 
 
@@ -17,25 +18,34 @@ module.exports = {
     },
     userRegisterProcess: (req, res) => {
         console.log(req.body);
-        console.log("" +req.file.filename);
+        // console.log("" +req.file.filename);
+        let rdoValidacion = validationResult(req)
+        if (rdoValidacion.errors.length > 0){
+            res.render("users/register", {
+                errors: rdoValidacion.mapped(),
+                oldData: req.body })
+        } else {
         const user ={ 
         "id" : datos.length + 1,
         "name" : req.body.name,
         "lastName" : req.body.lastName,
         "user" : req.body.user,
-        "birthday" : req.body.birthday,
-        "country" : req.body.country,
-        "city" : req.body.city,
-        "street" : req.body.street,
-        "height" : req.body.height,
-        "detail" : req.body.detail,
-        "userProfile" : req.body.userProfile,
-        "interests" : req.body.interests,
+
+        // "birthday" : req.body.birthday,
+        // "country" : req.body.country,
+        // "city" : req.body.city,
+        // "street" : req.body.street,
+        // "height" : req.body.height,
+        // "detail" : req.body.detail,
+        // "userProfile" : req.body.userProfile,
+        // "interests" : req.body.interests,
+
         "avatar" : req.file.filename,
         "password" : req.body.password
         }
         fs.writeFileSync(path.resolve(__dirname, '../database/users.json'), JSON.stringify([...datos, user], null, 2), 'utf-8');
         res.redirect("/")
+        }
     },
 
     userProfile: (req,res) =>{
