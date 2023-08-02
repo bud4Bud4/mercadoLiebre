@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const logMiddleware = require('./middlewares/logMiddleware')
 const error404 = require('./middlewares/error404')
+const session = require('express-session')
 
 const mainRouter = require("./routes/mainRouter.js")
 const userRouter = require('./routes/usersRouter.js')
@@ -19,6 +20,8 @@ app.use(logMiddleware);
 // Para recibir info que viaja por form -> req.body
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+app.use(session({secret: "MercadoLiebreSecretMessage"}))
 
 app.use(methodOverride('_method'));
 

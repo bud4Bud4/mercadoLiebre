@@ -22,13 +22,14 @@ let fileUpload = multer({storage: multerDiskStorage})
 
 
 router.get("/login", userController.userLogin)
+router.post("/login", userController.userLoginProcess)
 
 
 
 router.get("/register", userController.userRegister)
 router.post("/register", fileUpload.single('avatar'),expressValidatorRegister, userController.userRegisterProcess)
 
-router.get("/profile/:id", userController.userProfile)
+router.get("/profile", userController.userProfile)
 router.put("/userEditProcess", userController.userEditProcess)
 
 

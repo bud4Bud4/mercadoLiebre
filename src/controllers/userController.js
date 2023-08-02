@@ -10,7 +10,15 @@ module.exports = {
         res.render("users/login")
     },
     userLoginProcess: (req,res) =>{
-        res.redirect("/")
+        const userFound = datos.find((row) => row.user == req.body.user);
+        if (userFound) {
+            if (req.body.password == userFound.password){
+                req.session.user = userFound;
+                console.log(req.session)
+                res.redirect("/user/profile")
+            }else{ console.log(req.session);res.render("users/login", {errors: "Credenciales no validas", oldData: req.body})}
+        } else { console.log(req.session);res.render("users/login", {errors: "Credenciales no validas", oldData: req.body})}
+        
     },
 
     userRegister: (req,res) => {
@@ -49,7 +57,9 @@ module.exports = {
     },
 
     userProfile: (req,res) =>{
-        const userFound = datos.find((row) => row.id == req.params.id)
+        console.log(req.session);
+        const userFound = datos.find((row) => row.user == req.session.user.user)
+        console.log(userFound);
         if (userFound) {
             res.render("users/profile.ejs", {userFound: userFound})
         }else {res.send("usuario no encontrado")}
