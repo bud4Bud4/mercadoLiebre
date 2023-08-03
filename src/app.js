@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const logMiddleware = require('./middlewares/logMiddleware')
 const error404 = require('./middlewares/error404')
+const validateLogin = require('./middlewares/validateLogin')
 const session = require('express-session')
 
 const mainRouter = require("./routes/mainRouter.js")
@@ -34,5 +35,6 @@ app.use('/', mainRouter)
 app.use('/product', productRouter)
 app.use('/user', userRouter)
 app.use(error404)
+app.use(validateLogin)
 
 

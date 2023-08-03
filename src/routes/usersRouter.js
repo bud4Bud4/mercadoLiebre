@@ -4,6 +4,7 @@ const multer = require('multer');
 const path = require('path');
 const userController = require('../controllers/userController');
 const expressValidatorRegister = require('../middlewares/expressValidatorRegister');
+const sessionValidator = require('../middlewares/sessionValidator');
 
 
 let multerDiskStorage = multer.diskStorage({
@@ -21,12 +22,12 @@ let fileUpload = multer({storage: multerDiskStorage})
 
 
 
-router.get("/login", userController.userLogin)
+router.get("/login",sessionValidator, userController.userLogin)
 router.post("/login", userController.userLoginProcess)
 
 
 
-router.get("/register", userController.userRegister)
+router.get("/register",sessionValidator, userController.userRegister)
 router.post("/register", fileUpload.single('avatar'),expressValidatorRegister, userController.userRegisterProcess)
 
 router.get("/profile", userController.userProfile)
