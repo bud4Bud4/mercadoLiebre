@@ -101,6 +101,11 @@ main section h3 {
     text-align: left;
 }
 
+.subTitulos{
+    color: #ebebeb;
+    transition: all 250ms;
+}
+
 main section article{
 
     
@@ -117,6 +122,10 @@ main section article:hover{
 }
 main section article:hover i{
     transform: rotate3d(0, 1, 0, 180deg) rotate(-90deg);
+}
+
+main section article:hover .subTitulos{
+    color: #000;
 }
 
 main section article img{

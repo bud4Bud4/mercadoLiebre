@@ -17,7 +17,7 @@ body {
 }
 
 
-@media (min-width: 361px) {
+@media (min-width: 500px) {
     header{
         padding: 15px 10px 0 10px;
         justify-content: space-around;

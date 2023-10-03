@@ -7,7 +7,9 @@ body.delLogin {
 
 .formul {
     max-width: 450px;
-    margin: 50px auto;
+    margin: auto;
+    margin-top: 25vh;
+    margin-bottom: 22.5vh;
     background-color: #EAC926;
     padding: 20px;
     border-radius: 5px;
